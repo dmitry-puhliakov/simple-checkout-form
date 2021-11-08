@@ -1,0 +1,23 @@
+.submit-button {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #517da3;
+  background-color: #517da3;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  @include onDesktop {
+    width: 352px;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #517da3;
+  }
+
+  &:active {
+    border: none;
+    background-color: #517da3;
+    color: #f4f5f8;
+  }
+}

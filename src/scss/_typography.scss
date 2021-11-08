@@ -1,7 +1,93 @@
-h1 {
-  @extend %h1;
+.page {
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+    color: $c-font-1;
+  }
 }
 
-p {
-  font-size: 1.6rem;
+.form-section {
+  &__title {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: $c-font-1;
+  }
+}
+
+.radio {
+  &__label {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: $c-font-1;
+  }
+}
+
+.text-field {
+  &__input {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: $c-font-1;
+  }
+
+  &__label {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: $c-font-2;
+  }
+
+  &__textarea {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: $c-font-1;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 20px;
+      color: $c-font-2;
+    }
+  }
+
+  &__err {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: $c-font-4;
+  }
+}
+
+.submit-button {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  color: $c-font-3;
 }

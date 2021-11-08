@@ -1,0 +1,25 @@
+.radio {
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 15px;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 62.5px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__input:checked + &__label {
+    background-color: #87b9e7;
+    color: #fff;
+    text-decoration: underline;
+  }
+}

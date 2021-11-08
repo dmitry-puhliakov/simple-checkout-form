@@ -1,0 +1,23 @@
+.form-section {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__box {
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 16px;
+    }
+
+    &--single {
+      display: block;
+      max-width: 311px;
+    }
+
+    &--textarea {
+      display: block;
+      width: 100%;
+    }
+  }
+}
