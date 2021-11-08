@@ -9,4 +9,4 @@
 - Make adaptive for the mobile device at your own discretion
 ### Result
 - Stack of technologies: HTML5, SCSS, BEM, JS.
-- [DEMO LINK](https://dmitry-puhliakov.github.io/sun-test/)
+- [DEMO LINK](https://dmitry-puhliakov.github.io/simple-checkout-form/)
