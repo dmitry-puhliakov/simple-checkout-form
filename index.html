@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple checkout form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body class="page__body">
+    <main class="page__content">
+      <h1 class="page__title">Оформление заказа</h1>
+
+      <form
+        class="order-form"
+        action="/"
+        method=""
+      >
+        <section class="order-form__section form-section">
+          <p class="form-section__title">
+            Выберете тип оплаты:
+          </p>
+
+          <div class="form-section__box" id="payment-box">
+            <div class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="payment"
+                id="radio-payment-cash"
+                value="cash"
+                checked
+              >
+
+              <label
+                class="radio__label"
+                for="radio-payment-cash"
+              >
+                Наличный расчёт
+              </label>
+            </div>
+
+            <div class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="payment"
+                id="radio-payment-card"
+                value="card"
+              >
+
+              <label
+                class="radio__label"
+                for="radio-payment-card"
+              >
+                Оплата на карту
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="order-form__section form-section">
+          <p class="form-section__title">
+            Выберете тип доставки:
+          </p>
+
+          <div class="form-section__box" id="delivery-box">
+            <div class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="delivery"
+                id="radio-delivery-pickup"
+                value="pickup"
+                checked
+              >
+
+              <label
+                class="radio__label"
+                for="radio-delivery-pickup"
+              >
+                Самовывоз
+              </label>
+            </div>
+
+            <div class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="delivery"
+                id="radio-delivery-courier"
+                value="courier"
+              >
+
+              <label
+                class="radio__label"
+                for="radio-delivery-courier"
+              >
+                Курьером по Киеву
+              </label>
+            </div>
+
+            <div class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="delivery"
+                id="radio-delivery-np"
+                value="np"
+              >
+
+              <label
+                class="radio__label"
+                for="radio-delivery-np"
+              >
+                В отделение Новой Почты
+              </label>
+            </div>
+
+            <div class="radio">
+              <input
+                class="radio__input"
+                type="radio"
+                name="delivery"
+                id="radio-delivery-courier-np"
+                value="courier-np"
+              >
+
+              <label
+                class="radio__label"
+                for="radio-delivery-courier-np"
+              >
+                Курьером Новой Почты
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="order-form__section form-section">
+          <p class="form-section__title">Заполните данные:</p>
+
+          <div class="form-section__box form-section__box--single">
+            <div class="text-field">
+              <input
+                class="text-field__input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder=" "
+              >
+
+              <label
+                class="text-field__label"
+                for="user-name"
+              >
+                Имя
+              </label>
+
+              <p
+                class="text-field__err text-field__err--disable"
+                id="user-name-err"
+              >
+                Введите Ваше имя
+              </p>
+            </div>
+          </div>
+
+          <div class="form-section__box">
+            <div class="text-field">
+              <input
+                class="text-field__input"
+                type="text"
+                name="user-tel"
+                id="user-tel"
+                placeholder=" "
+              >
+
+              <label
+                for="user-tel"
+                class="text-field__label"
+              >
+                Номер телефона
+              </label>
+
+              <p
+                class="text-field__err text-field__err--disable"
+                id="user-tel-err"
+              >
+                Введите правильно номер телефона
+              </p>
+            </div>
+
+            <div class="text-field">
+              <input
+                class="text-field__input"
+                type="text"
+                name="user-email"
+                id="user-email"
+                placeholder=" "
+              >
+
+              <label
+                class="text-field__label"
+                for="user-email"
+              >
+                E-mail
+              </label>
+
+              <p
+                class="text-field__err text-field__err--disable"
+                id="user-email-err"
+              >
+                Введите правильно адрес электронной почты
+              </p>
+            </div>
+
+            <div class="text-field text-field--disabled" id="city-box">
+              <input
+                class="text-field__input"
+                type="text"
+                name="user-city"
+                id="user-city"
+                placeholder=" "
+              >
+
+              <label
+                class="text-field__label"
+                for="user-city"
+              >
+                Город
+              </label>
+
+              <p
+                class="text-field__err text-field__err--disable"
+                id="user-city-err"
+              >
+                Введите название города
+              </p>
+            </div>
+
+            <div class="text-field text-field--disabled" id="address-box">
+              <input
+                class="text-field__input"
+                type="text"
+                name="user-address"
+                id="user-address"
+                placeholder=" "
+              >
+
+              <label
+                class="text-field__label"
+                for="user-address"
+              >
+                Улица, дом, квартира
+              </label>
+
+              <p
+                class="text-field__err text-field__err--disable"
+                id="user-address-err"
+              >
+                Введите адрес доставки
+              </p>
+            </div>
+
+            <div class="text-field text-field--disabled" id="nnp-box">
+              <input
+                class="text-field__input"
+                type="text"
+                name="user-nnp"
+                id="user-nnp"
+                placeholder=" "
+              >
+
+              <label
+                class="text-field__label"
+                for="user-nnp"
+              >
+                Номер отделения Новой почты
+              </label>
+
+              <p
+                class="text-field__err text-field__err--disable"
+                id="user-nnp-err"
+              >
+                Введите номер отделения Новой Почты (только цифры)
+              </p>
+            </div>
+          </div>
+
+          <div class="form-section__box form-section__box--textarea">
+            <div class="text-field">
+              <textarea
+                class="text-field__textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Комментарий"
+             ></textarea>
+
+            </div>
+          </div>
+        </section>
+
+        <button class="submit-button" type="submit">
+          Оформить заказ
+        </button>
+      </form>
+    </main>
+
+    <script type="text/javascript" src="https://unpkg.com/imask"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
+  </body>
+</html>
